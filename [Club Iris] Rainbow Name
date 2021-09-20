@@ -1,5 +1,3 @@
-getgenv().rgb = true
-
 while wait(0.3) and rgb == true do
     function RGB()
     local R = math.random()
