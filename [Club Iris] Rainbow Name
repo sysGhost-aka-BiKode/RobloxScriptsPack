@@ -1,0 +1,17 @@
+getgenv().rgb = true
+
+while wait(0.3) and rgb == true do
+    function RGB()
+    local R = math.random()
+    local G = math.random()
+    local B = math.random()
+    local RC = Color3.new(R, G, B);
+    return RC
+end
+local args = {
+    [1] = "NameColor",
+    [2] = "Name",
+    [3] = RGB()
+}
+game:GetService("ReplicatedStorage").TagCustomization:FireServer(unpack(args))
+end
